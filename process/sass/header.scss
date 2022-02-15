@@ -1,0 +1,143 @@
+@import 'variables.scss';
+
+header {
+    height: 822px;
+    position: relative;
+}
+
+nav.container {
+    box-sizing: border-box;
+    color: $white-text;
+    position: absolute;
+    padding: 45px 395px 0 153px;
+    text-transform: uppercase;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    a {
+        color: $white-text;
+    }
+}
+
+.home {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+}
+
+.app-header__nav-menu-button {
+    display: none;
+}
+
+.app-header__nav-menu-button-icon {
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+span:nth-child(1),
+span:nth-child(2),
+span:nth-child(3) {
+    width: 30px;
+    height: 3px;
+    background-color: $white-text;
+    margin: 3px 0;
+    border-radius: 1px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+}
+
+.menu > li {
+    padding-left: 25px;
+}
+
+.menu > li a:hover {
+    text-decoration: underline;
+
+    /* Doesn't work for chom, bug fixing in progress :`( */
+    text-underline-offset: 4px;
+    text-decoration-color: $white-text;
+    text-decoration-thickness: 2px;
+}
+
+/* Hero block */
+
+.hero-block {
+    background-image: url(../assets/Hero_background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.glowing,
+.sliding {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    position: absolute;
+}
+
+.glowing {
+    animation-name: glowing;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+    top: 10px;
+    left: 2px;
+    z-index: 5;
+}
+
+.sliding {
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    top: 10px;
+    left: 2px;
+    z-index: 10;
+}
+
+#big-logo {
+    box-sizing: border-box;
+    position: relative;
+    margin: 273px auto 0 auto;
+    z-index: 100;
+}
+
+.hero-block h1 {
+    box-sizing: border-box;
+    margin-top: 15px;
+    position: relative;
+    z-index: 100;
+}
+
+.hero-block h2 {
+    color: $hero-header2;
+    position: relative;
+    z-index: 100;
+}

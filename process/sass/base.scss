@@ -1,0 +1,57 @@
+@import 'variables.scss';
+
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-style: normal;
+}
+
+h2,
+p,
+nav,
+footer {
+    font-family: Source Sans Pro;
+}
+
+h1 {
+    font-family: Oswald;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 30px;
+}
+
+p {
+    color: $light-grey-text;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.white-text {
+    color: $white-text;
+}
+
+button {
+    cursor: pointer;
+    background-color: $blue;
+    font-family: Oswald;
+    margin: 50px auto;
+    text-transform: uppercase;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: $white-text;
+}

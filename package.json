@@ -1,0 +1,32 @@
+{
+  "name": "css-preprocessors",
+  "version": "1.0.0",
+  "description": "sass_to_css_training",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/modina.inessa/css-preprocessors.git"
+  },
+  "keywords": [
+    "key"
+  ],
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/modina.inessa/css-preprocessors/issues"
+  },
+  "homepage": "https://gitlab.com/modina.inessa/css-preprocessors#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.49.7"
+  }
+}
