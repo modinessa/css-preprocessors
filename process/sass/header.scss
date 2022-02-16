@@ -63,13 +63,27 @@ span:nth-child(3) {
     padding-left: 25px;
 }
 
-.menu > li a:hover {
-    text-decoration: underline;
+.underline {
+    display: inline-block;
+    position: relative;
+}
 
-    /* Doesn't work for chom, bug fixing in progress :`( */
-    text-underline-offset: 4px;
-    text-decoration-color: $white-text;
-    text-decoration-thickness: 2px;
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 3px;
+    background-color: $white-text;
+    bottom: -7px;
+    left: 25px;
+}
+
+.underline::after {
+    transform: scaleX(0);
+    transition: transform 0.25s linear;
+}
+.underline:hover::after {
+    transform: scaleX(1);
 }
 
 /* Hero block */
@@ -83,7 +97,6 @@ span:nth-child(3) {
     height: 100%;
     display: flex;
     flex-direction: column;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -97,6 +110,8 @@ span:nth-child(3) {
     height: 100%;
     object-fit: none;
     position: absolute;
+    top: 10px;
+    left: 2px;
 }
 
 .glowing {
@@ -105,9 +120,6 @@ span:nth-child(3) {
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
-
-    top: 10px;
-    left: 2px;
     z-index: 5;
 }
 
@@ -117,8 +129,6 @@ span:nth-child(3) {
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
-    top: 10px;
-    left: 2px;
     z-index: 10;
 }
 
