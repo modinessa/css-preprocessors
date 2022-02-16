@@ -63,13 +63,27 @@ span:nth-child(3) {
     padding-left: 25px;
 }
 
-.menu > li a:hover {
-    text-decoration: underline;
+.underline {
+    display: inline-block;
+    position: relative;
+}
 
-    /* Doesn't work for chom, bug fixing in progress :`( */
-    text-underline-offset: 4px;
-    text-decoration-color: $white-text;
-    text-decoration-thickness: 2px;
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 3px;
+    background-color: $white-text;
+    bottom: -7px;
+    left: 25px;
+}
+
+.underline::after {
+    transform: scaleX(0);
+    transition: transform 0.25s linear;
+}
+.underline:hover::after {
+    transform: scaleX(1);
 }
 
 /* Hero block */
