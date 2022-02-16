@@ -14,8 +14,8 @@ h3 {
 
 h2,
 p,
-nav,
-footer {
+.app-header__nav,
+.app-footer {
     font-family: Source Sans Pro;
 }
 
@@ -39,10 +39,6 @@ p {
     text-align: left;
 }
 
-.white-text {
-    color: $white-text;
-}
-
 button {
     cursor: pointer;
     background-color: $blue;
@@ -53,5 +49,4 @@ button {
 
 a:-webkit-any-link {
     text-decoration: none;
-    color: $white-text;
 }

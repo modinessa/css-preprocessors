@@ -1,11 +1,11 @@
 @import 'variables.scss';
 
 @media (max-width: 768px) {
-    nav.container {
+    .app-header__nav {
         padding: 50px 30px 0 30px;
     }
 
-    .show-menu {
+    .app-header__nav-menu {
         display: none;
     }
 
@@ -13,34 +13,33 @@
         display: block;
     }
 
-    .headline {
+    .app-main__headline {
         padding: 65px 23px 116px 27px;
     }
 
-    .headline h1,
-    .headline h2,
-    .headline p {
+    .app-main__headline__title,
+    .app-main__headline__subtitle {
         text-align: left;
     }
 
-    .headLine_container {
+    .app-main__headline_container {
         display: block;
         width: 100%;
         margin-top: 15px;
     }
 
-    .headLine_container p {
+    .app-main__headline__copy {
         padding-right: 0;
         padding-left: 0;
         padding-top: 35px;
     }
 
-    .headline button {
+    .app-main__headline-button {
         display: inline;
         margin: 50px 0 0 0;
     }
 
-    .learn-more button {
+    .app-main__learn-more-button {
         height: 100px;
         width: 100px;
         font-size: 45px;
@@ -48,34 +47,27 @@
         margin-bottom: 82px;
     }
 
-    .learn-more h1 {
+    .app-main__learn-more__title {
         padding-top: 72px;
     }
 
-    .learn-more button {
-        margin-top: 91px;
-    }
-
-    footer {
+    .app-footer {
+        padding-top: 58px;
         height: 290px;
-    }
-
-    .grid-container {
         display: block;
-        margin: 0 auto;
-        padding: 58px 0 75px 0;
         text-align: center;
     }
 
-    .project-logo {
+    .app-footer__container {
+        margin: 0 auto;
         justify-content: center;
     }
 
-    .contacts {
+    .app-header__contacts {
         margin-top: 31px;
     }
 
-    .e-mail {
+    .app-header__e-mail {
         margin-top: 18px;
         margin-bottom: 19px;
     }

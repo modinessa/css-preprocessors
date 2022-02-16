@@ -1,29 +1,22 @@
 @import 'variables.scss';
 
-footer {
+.app-footer {
     background-color: $footer-background;
     box-sizing: border-box;
     height: 199px;
     padding: 37px 140px 0 153px;
     width: 100%;
-}
-
-.e-mail a {
-    color: $footer-text;
-}
-
-.grid-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 
-.grid-container * {
+.app-footer * {
     margin: 0;
     padding: 0;
 }
 
-.project-logo {
+.app-footer__container {
     align-self: start;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -32,7 +25,8 @@ footer {
     display: flex;
 }
 
-.project-logo div {
+.app-header__container-item-home {
+    color: $white-text;
     font-size: 18px;
     font-style: normal;
     text-transform: uppercase;
@@ -41,7 +35,7 @@ footer {
     padding-left: 16px;
 }
 
-.contacts {
+.app-header__contacts {
     color: $footer-text;
     align-self: start;
     justify-self: start;
@@ -49,13 +43,17 @@ footer {
     grid-row: 1/2;
 }
 
-.e-mail {
+.app-header__e-mail-link {
+    color: $footer-text;
+}
+
+.app-header__e-mail {
     align-self: start;
     grid-column: 3/5;
     grid-row: 2/3;
 }
 
-.copyright {
+.app-header__copyright {
     color: $footer-text;
     justify-self: end;
     grid-column: 6/8;
