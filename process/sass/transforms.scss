@@ -1,12 +1,12 @@
 @import 'variables.scss';
 
-#big-logo {
+.app-header__hero__img-big-logo {
     transform: scale(1, 1) rotateY(0deg);
     transform-origin: center;
     transition: all 1s;
 }
 
-#big-logo:hover {
+.app-header__hero__img-big-logo:hover {
     transform: scale(1.8, 1.8) rotateY(180deg);
 }
 
@@ -19,13 +19,6 @@
 #read-more:hover {
     transform: rotateZ(15deg);
 }
-
-/* .preload * {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-} */
 
 #play {
     transform: scale(1, 1);

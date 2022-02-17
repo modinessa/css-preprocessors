@@ -1,11 +1,11 @@
 @import 'variables.scss';
 
-header {
+.app-header {
     height: 822px;
     position: relative;
 }
 
-nav.container {
+.app-header__nav {
     box-sizing: border-box;
     color: $white-text;
     position: absolute;
@@ -16,12 +16,11 @@ nav.container {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    a {
-        color: $white-text;
-    }
 }
 
-.home {
+.app-header__nav-item-home {
+    display: block;
+    color: $white-text;
     font-weight: 600;
     font-size: 20px;
     line-height: 16px;
@@ -49,7 +48,7 @@ span:nth-child(3) {
     border-radius: 1px;
 }
 
-.menu {
+.app-header__nav-menu {
     display: flex;
     justify-content: space-between;
     width: 420px;
@@ -59,36 +58,35 @@ span:nth-child(3) {
     letter-spacing: 0.2em;
 }
 
-.menu > li {
+.app-header__nav-menu-item {
     padding-left: 25px;
-}
-
-.underline {
     display: inline-block;
     position: relative;
 }
 
-.underline::after {
+.app-header__nav-menu-item-link {
+    color: $white-text;
+}
+
+.app-header__nav-menu-item::after {
     content: '';
     position: absolute;
-    width: 75%;
+    width: calc(100% - 25px);
     height: 3px;
     background-color: $white-text;
     bottom: -7px;
     left: 25px;
-}
-
-.underline::after {
     transform: scaleX(0);
     transition: transform 0.25s linear;
 }
-.underline:hover::after {
+
+.app-header__nav-menu-item:hover::after {
     transform: scaleX(1);
 }
 
 /* Hero block */
 
-.hero-block {
+.app-header__hero {
     background-image: url(../assets/Hero_background.png);
     background-position: top center;
     background-repeat: no-repeat;
@@ -103,8 +101,8 @@ span:nth-child(3) {
     z-index: 1;
 }
 
-.glowing,
-.sliding {
+.app-header__hero__img-glowing,
+.app-header__hero__img-sliding {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -114,7 +112,7 @@ span:nth-child(3) {
     left: 2px;
 }
 
-.glowing {
+.app-header__hero__img-glowing {
     animation-name: glowing;
     animation-duration: 3s;
     animation-timing-function: ease-out;
@@ -123,7 +121,7 @@ span:nth-child(3) {
     z-index: 5;
 }
 
-.sliding {
+.app-header__hero__img-sliding {
     animation-name: slide;
     animation-duration: 2s;
     animation-timing-function: ease-out;
@@ -132,21 +130,22 @@ span:nth-child(3) {
     z-index: 10;
 }
 
-#big-logo {
+.app-header__hero__img-big-logo {
     box-sizing: border-box;
     position: relative;
     margin: 273px auto 0 auto;
     z-index: 100;
 }
 
-.hero-block h1 {
+.app-header__hero-title {
+    color: $white-text;
     box-sizing: border-box;
     margin-top: 15px;
     position: relative;
     z-index: 100;
 }
 
-.hero-block h2 {
+.app-header__hero-subtitle {
     color: $hero-header2;
     position: relative;
     z-index: 100;
