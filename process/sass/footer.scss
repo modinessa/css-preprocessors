@@ -9,62 +9,62 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(2, 1fr);
-}
 
-.app-footer * {
-    margin: 0;
-    padding: 0;
-}
+    &* {
+        margin: 0;
+        padding: 0;
+    }
 
-.app-footer__container {
-    align-self: start;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    justify-content: start;
-    align-items: center;
-    display: flex;
-}
+    &__container {
+        align-self: start;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-content: start;
+        align-items: center;
+        display: flex;
 
-.app-header__container-item-home {
-    color: $white-text;
-    font-size: 18px;
-    font-style: normal;
-    text-transform: uppercase;
-    font-weight: normal;
-    letter-spacing: 0.2em;
-    padding-left: 16px;
-}
+        &-item-home {
+            color: $white-text;
+            font-size: 18px;
+            font-style: normal;
+            text-transform: uppercase;
+            font-weight: normal;
+            letter-spacing: 0.2em;
+            padding-left: 16px;
+        }
+    }
 
-.app-header__contacts {
-    color: $footer-text;
-    align-self: start;
-    justify-self: start;
-    grid-column: 3/5;
-    grid-row: 1/2;
-}
+    &__contacts {
+        color: $footer-text;
+        align-self: start;
+        justify-self: start;
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
 
-.app-header__e-mail-link {
-    color: $footer-text;
-}
+    &__e-mail-link {
+        color: $footer-text;
+    }
 
-.app-header__e-mail {
-    align-self: start;
-    grid-column: 3/5;
-    grid-row: 2/3;
-}
+    &__e-mail {
+        align-self: start;
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
 
-.app-header__copyright {
-    color: $footer-text;
-    justify-self: end;
-    grid-column: 6/8;
-    grid-row: 2/3;
-}
+    &__copyright {
+        color: $footer-text;
+        justify-self: end;
+        grid-column: 6/8;
+        grid-row: 2/3;
+    }
 
-.contacts,
-.copyright,
-footer a:-webkit-any-link {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 22px;
+    &.contacts,
+    &.copyright,
+    footer a:-webkit-any-link {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 22px;
+    }
 }
