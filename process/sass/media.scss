@@ -3,52 +3,40 @@
 @media (max-width: 768px) {
     .app-header__nav {
         padding: 50px 30px 0 30px;
-    }
 
-    .app-header__nav-menu {
-        display: none;
-    }
+        &-menu {
+            display: none;
 
-    .app-header__nav-menu-button {
-        display: block;
+            &-button {
+                display: block;
+            }
+        }
     }
 
     .app-main__headline {
         padding: 65px 23px 116px 27px;
-    }
 
-    .app-main__headline__title,
-    .app-main__headline__subtitle {
-        text-align: left;
-    }
+        &__title,
+        &__subtitle {
+            text-align: left;
+        }
 
-    .app-main__headline_container {
-        display: block;
-        width: 100%;
-        margin-top: 15px;
-    }
+        &__container {
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+        }
 
-    .app-main__headline__copy {
-        padding-right: 0;
-        padding-left: 0;
-        padding-top: 35px;
-    }
+        &__copy {
+            padding-right: 0;
+            padding-left: 0;
+            padding-top: 35px;
+        }
 
-    .app-main__headline-button {
-        display: inline;
-        margin: 50px 0 0 0;
-    }
-
-    .app-main__learn-more-button {
-        height: 100px;
-        width: 100px;
-        font-size: 45px;
-        padding-left: 20px;
-        margin-bottom: 82px;
-    }
-
-    .app-main__learn-more__title {
-        padding-top: 72px;
+        &__button {
+            display: inline;
+            margin: 50px 0 0 0;
+        }
     }
 
     .app-footer {
@@ -56,19 +44,19 @@
         height: 290px;
         display: block;
         text-align: center;
-    }
 
-    .app-footer__container {
-        margin: 0 auto;
-        justify-content: center;
-    }
+        &__container {
+            margin: 0 auto;
+            justify-content: center;
+        }
 
-    .app-header__contacts {
-        margin-top: 31px;
-    }
+        &__contacts {
+            margin-top: 31px;
+        }
 
-    .app-header__e-mail {
-        margin-top: 18px;
-        margin-bottom: 19px;
+        &__e-mail {
+            margin-top: 18px;
+            margin-bottom: 19px;
+        }
     }
 }
